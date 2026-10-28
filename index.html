@@ -155,7 +155,7 @@ async function analyze() {
     res.style.display = 'none';
 
     try {
-        const response = await fetch(`https://tikwm.com/api/?url=${encodeURIComponent(input)}`);
+        const response = await fetch(`https://api-hub-iota.vercel.app/api/tiktok?url=${encodeURIComponent(input)}`);
         const result = await response.json();
 
         if(result.code === 0) {
